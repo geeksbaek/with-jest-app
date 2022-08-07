@@ -11,14 +11,4 @@ describe("Home", () => {
 
     expect(heading).toBeInTheDocument();
   });
-
-  it("renders a link to the about page", () => {
-    render(<Home />);
-
-    const link = screen.getByRole("link", {
-      name: /about/i,
-    });
-
-    expect(link).toBeInTheDocument();
-  });
 });
